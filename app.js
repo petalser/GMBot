@@ -60,3 +60,4 @@ bot.on("message", (msg) => {
   result.id = msg.chat.id;
   job.start();
 });
+console.log("Runs");
