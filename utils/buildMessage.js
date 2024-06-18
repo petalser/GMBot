@@ -4,6 +4,7 @@ import calcWind from "./calcWind.js";
 const TO_MILIMETERS_MERCURY = 1.33322368;
 
 const buildMessage = (data) => {
+  console.log(data);
   const temp = data.weather.main.temp.toFixed(0);
   const main = data.weather.weather[0].main;
   const temp_min = data.weather.main.temp_min.toFixed(0);

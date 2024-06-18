@@ -13,7 +13,7 @@ const privatUrl =
 const bot = new TelegramBot(token, { polling: true });
 
 const job = new CronJob(
-  "45 21 * * *",
+  "* * * * *",
   async () => {
     console.log("Job");
     if (result.id) {
